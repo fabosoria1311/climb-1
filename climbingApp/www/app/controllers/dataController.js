@@ -11,11 +11,16 @@ climbApp.controller('DataCtrl', function($scope, $routeParams) {
 	$scope.sLoadRegion = function() {
 
 		$('#carRegions').owlCarousel({
-			loop : true,
-			margin : 10,
-			nav : false,
-			items : 1,
-			animateOut: 'fadeOut'
+			autoPlay : 3500,
+			goToFirst : true,
+			goToFirstSpeed : 2000,
+			navigation : false,
+			slideSpeed : 700,
+			pagination : false,
+			transitionStyle : "fade",
+			singleItem : true,
+			mouseDrag : false,
+			items:1,
 		});
 
 	}
